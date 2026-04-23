@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post-Fukushima Nuclear Reactor Construction Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Post-Fukushima Nuclear Reactor Tracker</h1>
+      <p class="tagline">
+        Nuclear power reactors whose construction commenced after the 2011 Fukushima Daiichi accident
+        (construction start on or after 1&nbsp;January&nbsp;2012).
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <aside id="sidebar">
+      <section class="summary-block">
+        <h2>At a glance</h2>
+        <dl class="stats">
+          <div><dt>Sites</dt><dd id="stat-sites">–</dd></div>
+          <div><dt>Reactor units</dt><dd id="stat-units">–</dd></div>
+          <div><dt>Countries</dt><dd id="stat-countries">–</dd></div>
+          <div><dt>Total gross capacity</dt><dd id="stat-mw">– MW<sub>e</sub></dd></div>
+        </dl>
+      </section>
+
+      <section class="legend">
+        <h2>Legend</h2>
+        <ul>
+          <li>
+            <span class="swatch swatch-operational"></span>
+            Operational &mdash; unit connected to the grid
+          </li>
+          <li>
+            <span class="swatch swatch-construction"></span>
+            Under construction (as of 31&nbsp;Dec&nbsp;2024)
+          </li>
+          <li>
+            <span class="swatch swatch-mixed"></span>
+            Mixed site &mdash; some units operating, some still under construction
+          </li>
+        </ul>
+        <p class="hint">Hover a marker for unit-level details. Scroll to zoom, drag to pan.</p>
+      </section>
+
+      <section class="country-list">
+        <h2>Countries with post&#8209;2012 construction starts</h2>
+        <ul id="country-breakdown"></ul>
+      </section>
+
+      <section class="source">
+        <h2>Source</h2>
+        <p>
+          International Atomic Energy Agency,
+          <em>Nuclear Power Reactors in the World</em>,
+          Reference Data Series No.&nbsp;2, 2025 Edition (IAEA-RDS-2/45).
+        </p>
+        <p class="fine-print">
+          Capacity figures shown are headline <strong>gross</strong> electrical output
+          in MW<sub>e</sub>. Dates reflect the year and month of first concrete
+          pouring (construction start), initial grid connection, and start of
+          commercial operation as reported in IAEA Tables 10, 13 and 14.
+        </p>
+      </section>
+    </aside>
+
+    <div id="map-container">
+      <svg id="map" role="img" aria-label="World map showing nuclear reactors whose construction started after 2011."></svg>
+      <div id="tooltip" role="tooltip" aria-hidden="true"></div>
+      <div id="map-controls">
+        <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+        <button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button>
+        <button type="button" id="zoom-reset" aria-label="Reset view">&#x21bb;</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
