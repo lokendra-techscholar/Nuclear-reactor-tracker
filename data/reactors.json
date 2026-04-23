@@ -1,0 +1,1470 @@
+{
+  "source": "IAEA Reference Data Series No. 2 (RDS-2), 2025 Edition \u2014 Nuclear Power Reactors in the World",
+  "filter": "Reactors with construction start dates from January 2012 onward (post-Fukushima)",
+  "total_reactors": 81,
+  "total_sites": 34,
+  "total_gross_mw": 93676,
+  "sites": [
+    {
+      "site_name": "Lima (Atucha site), Buenos Aires",
+      "country": "Argentina",
+      "country_code": "AR",
+      "lat": -33.967,
+      "lon": -59.2,
+      "reactors": [
+        {
+          "code": "AR-4",
+          "name": "CAREM25",
+          "type": "PWR",
+          "model": "CAREM Prototyp",
+          "gross_mw": 29,
+          "net_mw": 25,
+          "thermal_mw": 100,
+          "const_start": "2015-08",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 1,
+      "total_gross_mw": 29,
+      "has_operational": false
+    },
+    {
+      "site_name": "Rooppur, Pabna District",
+      "country": "Bangladesh",
+      "country_code": "BD",
+      "lat": 24.062,
+      "lon": 89.048,
+      "reactors": [
+        {
+          "code": "BD-1",
+          "name": "ROOPPUR-1",
+          "type": "PWR",
+          "model": "VVER V-523",
+          "gross_mw": 1200,
+          "net_mw": 1080,
+          "thermal_mw": 3200,
+          "const_start": "2017-11",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "BD-2",
+          "name": "ROOPPUR-2",
+          "type": "PWR",
+          "model": "VVER V-523",
+          "gross_mw": 1200,
+          "net_mw": 1080,
+          "thermal_mw": 3200,
+          "const_start": "2018-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2400,
+      "has_operational": false
+    },
+    {
+      "site_name": "Astravets, Grodno Region",
+      "country": "Belarus",
+      "country_code": "BY",
+      "lat": 54.773,
+      "lon": 26.091,
+      "reactors": [
+        {
+          "code": "BY-1",
+          "name": "BELARUSIAN-1",
+          "type": "PWR",
+          "model": "VVER V-491",
+          "gross_mw": 1194,
+          "net_mw": 1110,
+          "thermal_mw": 3200,
+          "const_start": "2013-11",
+          "grid_connection": "2020-11",
+          "commercial_op": "2021-06",
+          "status": "Operational"
+        },
+        {
+          "code": "BY-2",
+          "name": "BELARUSIAN-2",
+          "type": "PWR",
+          "model": "VVER V-491",
+          "gross_mw": 1194,
+          "net_mw": 1110,
+          "thermal_mw": 3200,
+          "const_start": "2014-04",
+          "grid_connection": "2023-05",
+          "commercial_op": "2023-11",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2388,
+      "has_operational": true
+    },
+    {
+      "site_name": "Cangnan, Zhejiang",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 27.359,
+      "lon": 120.608,
+      "reactors": [
+        {
+          "code": "CN-63",
+          "name": "SANAO-1",
+          "type": "PWR",
+          "model": "HRP1000",
+          "gross_mw": 1210,
+          "net_mw": 1117,
+          "thermal_mw": 3180,
+          "const_start": "2020-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-64",
+          "name": "SANAO-2",
+          "type": "PWR",
+          "model": "HRP1000",
+          "gross_mw": 1210,
+          "net_mw": 1117,
+          "thermal_mw": 3180,
+          "const_start": "2021-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2420,
+      "has_operational": false
+    },
+    {
+      "site_name": "Changjiang, Hainan",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 19.451,
+      "lon": 108.728,
+      "reactors": [
+        {
+          "code": "CN-65",
+          "name": "CHANGJIANG-3",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1198,
+          "net_mw": 1000,
+          "thermal_mw": 3190,
+          "const_start": "2021-03",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-69",
+          "name": "LINGLONG-1",
+          "type": "PWR",
+          "model": "ACP100",
+          "gross_mw": 125,
+          "net_mw": 100,
+          "thermal_mw": 385,
+          "const_start": "2021-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-66",
+          "name": "CHANGJIANG-4",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1198,
+          "net_mw": 1000,
+          "thermal_mw": 3190,
+          "const_start": "2021-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 3,
+      "total_gross_mw": 2521,
+      "has_operational": false
+    },
+    {
+      "site_name": "Fangchenggang, Guangxi",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 21.674,
+      "lon": 108.588,
+      "reactors": [
+        {
+          "code": "CN-55",
+          "name": "FANGCHENGGANG-3",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1180,
+          "net_mw": 1000,
+          "thermal_mw": 3150,
+          "const_start": "2015-12",
+          "grid_connection": "2023-01",
+          "commercial_op": "2023-03",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-56",
+          "name": "FANGCHENGGANG-4",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1180,
+          "net_mw": 1000,
+          "thermal_mw": 3150,
+          "const_start": "2016-12",
+          "grid_connection": "2024-04",
+          "commercial_op": "2024-05",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2360,
+      "has_operational": true
+    },
+    {
+      "site_name": "Fuqing, Fujian",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 25.45,
+      "lon": 119.452,
+      "reactors": [
+        {
+          "code": "CN-43",
+          "name": "FUQING-4",
+          "type": "PWR",
+          "model": "CNP-1000",
+          "gross_mw": 1089,
+          "net_mw": 1000,
+          "thermal_mw": 2905,
+          "const_start": "2012-11",
+          "grid_connection": "2017-07",
+          "commercial_op": "2017-09",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-51",
+          "name": "FUQING-5",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1161,
+          "net_mw": 1075,
+          "thermal_mw": 3050,
+          "const_start": "2015-05",
+          "grid_connection": "2020-11",
+          "commercial_op": "2021-01",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-52",
+          "name": "FUQING-6",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1150,
+          "net_mw": 1075,
+          "thermal_mw": 3060,
+          "const_start": "2015-12",
+          "grid_connection": "2022-01",
+          "commercial_op": "2022-03",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 3,
+      "total_gross_mw": 3400,
+      "has_operational": true
+    },
+    {
+      "site_name": "Haiyang, Shandong",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 36.712,
+      "lon": 121.22,
+      "reactors": [
+        {
+          "code": "CN-74",
+          "name": "HAIYANG-3",
+          "type": "PWR",
+          "model": "CAP1000",
+          "gross_mw": 1253,
+          "net_mw": 1161,
+          "thermal_mw": 3400,
+          "const_start": "2022-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-75",
+          "name": "HAIYANG-4",
+          "type": "PWR",
+          "model": "CAP1000",
+          "gross_mw": 1253,
+          "net_mw": 1161,
+          "thermal_mw": 3400,
+          "const_start": "2023-04",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2506,
+      "has_operational": false
+    },
+    {
+      "site_name": "Huizhou, Guangdong",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 22.829,
+      "lon": 114.765,
+      "reactors": [
+        {
+          "code": "CN-61",
+          "name": "TAIPINGLING-1",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1202,
+          "net_mw": 1116,
+          "thermal_mw": 3190,
+          "const_start": "2019-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-62",
+          "name": "TAIPINGLING-2",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1202,
+          "net_mw": 1116,
+          "thermal_mw": 3190,
+          "const_start": "2020-10",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2404,
+      "has_operational": false
+    },
+    {
+      "site_name": "Huludao, Liaoning",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 40.228,
+      "lon": 120.91,
+      "reactors": [
+        {
+          "code": "CN-70",
+          "name": "XUDAPU-3",
+          "type": "PWR",
+          "model": "VVER-1200/V491",
+          "gross_mw": 1274,
+          "net_mw": 1200,
+          "thermal_mw": 3200,
+          "const_start": "2021-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-71",
+          "name": "XUDAPU-4",
+          "type": "PWR",
+          "model": "VVER-1200/V491",
+          "gross_mw": 1274,
+          "net_mw": 1200,
+          "thermal_mw": 3200,
+          "const_start": "2022-05",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-81",
+          "name": "XUDAPU-1",
+          "type": "PWR",
+          "model": "CAP1000",
+          "gross_mw": 1290,
+          "net_mw": 1000,
+          "thermal_mw": 2905,
+          "const_start": "2023-11",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-82",
+          "name": "XUDAPU-2",
+          "type": "PWR",
+          "model": "CAP1000",
+          "gross_mw": 1290,
+          "net_mw": 1000,
+          "thermal_mw": 2905,
+          "const_start": "2024-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 4,
+      "total_gross_mw": 5128,
+      "has_operational": false
+    },
+    {
+      "site_name": "Lianjiang, Guangdong",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 21.27,
+      "lon": 110.282,
+      "reactors": [
+        {
+          "code": "CN-79",
+          "name": "LIANJIANG-1",
+          "type": "PWR",
+          "model": "CAP1000",
+          "gross_mw": 1224,
+          "net_mw": 1224,
+          "thermal_mw": 3400,
+          "const_start": "2023-09",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-80",
+          "name": "LIANJIANG-2",
+          "type": "PWR",
+          "model": "CAP1000",
+          "gross_mw": 1224,
+          "net_mw": 1224,
+          "thermal_mw": 3400,
+          "const_start": "2024-04",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2448,
+      "has_operational": false
+    },
+    {
+      "site_name": "Lianyungang, Jiangsu",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 34.692,
+      "lon": 119.461,
+      "reactors": [
+        {
+          "code": "CN-45",
+          "name": "TIANWAN-3",
+          "type": "PWR",
+          "model": "VVER V-428M",
+          "gross_mw": 1126,
+          "net_mw": 1060,
+          "thermal_mw": 3000,
+          "const_start": "2012-12",
+          "grid_connection": "2017-12",
+          "commercial_op": "2018-02",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-46",
+          "name": "TIANWAN-4",
+          "type": "PWR",
+          "model": "VVER V-428M",
+          "gross_mw": 1126,
+          "net_mw": 1060,
+          "thermal_mw": 3000,
+          "const_start": "2013-09",
+          "grid_connection": "2018-10",
+          "commercial_op": "2018-12",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-53",
+          "name": "TIANWAN-5",
+          "type": "PWR",
+          "model": "CNP-1000",
+          "gross_mw": 1118,
+          "net_mw": 1060,
+          "thermal_mw": 2905,
+          "const_start": "2015-12",
+          "grid_connection": "2020-08",
+          "commercial_op": "2020-09",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-54",
+          "name": "TIANWAN-6",
+          "type": "PWR",
+          "model": "CNP-1000",
+          "gross_mw": 1118,
+          "net_mw": 1060,
+          "thermal_mw": 2905,
+          "const_start": "2016-09",
+          "grid_connection": "2021-05",
+          "commercial_op": "2021-06",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-67",
+          "name": "TIANWAN-7",
+          "type": "PWR",
+          "model": "VVER-1200/V491",
+          "gross_mw": 1265,
+          "net_mw": 1171,
+          "thermal_mw": 3200,
+          "const_start": "2021-05",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-68",
+          "name": "TIANWAN-8",
+          "type": "PWR",
+          "model": "VVER-1200/V491",
+          "gross_mw": 1265,
+          "net_mw": 1171,
+          "thermal_mw": 3200,
+          "const_start": "2022-02",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 6,
+      "total_gross_mw": 7018,
+      "has_operational": true
+    },
+    {
+      "site_name": "Lufeng, Guangdong",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 22.852,
+      "lon": 115.59,
+      "reactors": [
+        {
+          "code": "CN-76",
+          "name": "LUFENG-5",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1200,
+          "net_mw": 1116,
+          "thermal_mw": 3180,
+          "const_start": "2022-09",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-77",
+          "name": "LUFENG-6",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1200,
+          "net_mw": 1116,
+          "thermal_mw": 3180,
+          "const_start": "2023-08",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2400,
+      "has_operational": false
+    },
+    {
+      "site_name": "Ningde, Fujian",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 26.918,
+      "lon": 119.76,
+      "reactors": [
+        {
+          "code": "CN-85",
+          "name": "NINGDE-5",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1200,
+          "net_mw": 1200,
+          "thermal_mw": 3180,
+          "const_start": "2024-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 1,
+      "total_gross_mw": 1200,
+      "has_operational": false
+    },
+    {
+      "site_name": "Sanmen, Zhejiang",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 29.1,
+      "lon": 121.591,
+      "reactors": [
+        {
+          "code": "CN-72",
+          "name": "SANMEN-3",
+          "type": "PWR",
+          "model": "CAP1000",
+          "gross_mw": 1251,
+          "net_mw": 1163,
+          "thermal_mw": 3400,
+          "const_start": "2022-06",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-73",
+          "name": "SANMEN-4",
+          "type": "PWR",
+          "model": "CAP1000",
+          "gross_mw": 1251,
+          "net_mw": 1163,
+          "thermal_mw": 3400,
+          "const_start": "2023-03",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2502,
+      "has_operational": false
+    },
+    {
+      "site_name": "Shidaowan, Shandong",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 36.947,
+      "lon": 122.535,
+      "reactors": [
+        {
+          "code": "CN-44",
+          "name": "SHIDAO BAY-1",
+          "type": "HTGR",
+          "model": "HTR-PM",
+          "gross_mw": 211,
+          "net_mw": 150,
+          "thermal_mw": 500,
+          "const_start": "2012-12",
+          "grid_connection": "2021-12",
+          "commercial_op": "2023-12",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-87",
+          "name": "SHIDAOWAN-1",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1225,
+          "net_mw": 1134,
+          "thermal_mw": 3180,
+          "const_start": "2024-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 1436,
+      "has_operational": true
+    },
+    {
+      "site_name": "Wafangdian, Liaoning",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 39.797,
+      "lon": 121.483,
+      "reactors": [
+        {
+          "code": "CN-49",
+          "name": "HONGYANHE-5",
+          "type": "PWR",
+          "model": "ACPR-1000",
+          "gross_mw": 1119,
+          "net_mw": 1061,
+          "thermal_mw": 2905,
+          "const_start": "2015-03",
+          "grid_connection": "2021-06",
+          "commercial_op": "2021-07",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-50",
+          "name": "HONGYANHE-6",
+          "type": "PWR",
+          "model": "ACPR-1000",
+          "gross_mw": 1119,
+          "net_mw": 1061,
+          "thermal_mw": 2905,
+          "const_start": "2015-07",
+          "grid_connection": "2022-05",
+          "commercial_op": "2022-06",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2238,
+      "has_operational": true
+    },
+    {
+      "site_name": "Xiapu, Fujian",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 26.884,
+      "lon": 120.013,
+      "reactors": [
+        {
+          "code": "CN-00",
+          "name": "XIAPU-1",
+          "type": "FBR",
+          "model": "CFR600",
+          "gross_mw": 682,
+          "net_mw": 642,
+          "thermal_mw": 1882,
+          "const_start": "2017-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-78",
+          "name": "XIAPU-2",
+          "type": "FBR",
+          "model": "CFR600",
+          "gross_mw": 682,
+          "net_mw": 642,
+          "thermal_mw": 1882,
+          "const_start": "2020-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 1364,
+      "has_operational": false
+    },
+    {
+      "site_name": "Yangjiang, Guangdong",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 21.707,
+      "lon": 112.263,
+      "reactors": [
+        {
+          "code": "CN-41",
+          "name": "YANGJIANG-4",
+          "type": "PWR",
+          "model": "CPR-1000",
+          "gross_mw": 1086,
+          "net_mw": 1000,
+          "thermal_mw": 2905,
+          "const_start": "2012-11",
+          "grid_connection": "2017-01",
+          "commercial_op": "2017-03",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-47",
+          "name": "YANGJIANG-5",
+          "type": "PWR",
+          "model": "ACPR-1000",
+          "gross_mw": 1086,
+          "net_mw": 1000,
+          "thermal_mw": 2905,
+          "const_start": "2013-09",
+          "grid_connection": "2018-05",
+          "commercial_op": "2018-07",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-48",
+          "name": "YANGJIANG-6",
+          "type": "PWR",
+          "model": "ACPR-1000",
+          "gross_mw": 1086,
+          "net_mw": 1000,
+          "thermal_mw": 2905,
+          "const_start": "2013-12",
+          "grid_connection": "2019-06",
+          "commercial_op": "2019-07",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 3,
+      "total_gross_mw": 3258,
+      "has_operational": true
+    },
+    {
+      "site_name": "Zhangzhou, Fujian",
+      "country": "China",
+      "country_code": "CN",
+      "lat": 23.727,
+      "lon": 117.422,
+      "reactors": [
+        {
+          "code": "CN-57",
+          "name": "ZHANGZHOU-1",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1212,
+          "net_mw": 1126,
+          "thermal_mw": 3190,
+          "const_start": "2019-10",
+          "grid_connection": "2024-11",
+          "commercial_op": "2025-01",
+          "status": "Operational"
+        },
+        {
+          "code": "CN-58",
+          "name": "ZHANGZHOU-2",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1212,
+          "net_mw": 1126,
+          "thermal_mw": 3190,
+          "const_start": "2020-09",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-83",
+          "name": "ZHANGZHOU-3",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1214,
+          "net_mw": 1129,
+          "thermal_mw": 3180,
+          "const_start": "2024-02",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "CN-84",
+          "name": "ZHANGZHOU-4",
+          "type": "PWR",
+          "model": "HPR1000",
+          "gross_mw": 1214,
+          "net_mw": 1129,
+          "thermal_mw": 3180,
+          "const_start": "2024-09",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 4,
+      "total_gross_mw": 4852,
+      "has_operational": true
+    },
+    {
+      "site_name": "El Dabaa, Matrouh Governorate",
+      "country": "Egypt",
+      "country_code": "EG",
+      "lat": 31.046,
+      "lon": 28.506,
+      "reactors": [
+        {
+          "code": "EG-1",
+          "name": "EL DABAA-1",
+          "type": "PWR",
+          "model": "VVER-1200",
+          "gross_mw": 1200,
+          "net_mw": 1100,
+          "thermal_mw": 3200,
+          "const_start": "2022-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "EG-2",
+          "name": "EL DABAA-2",
+          "type": "PWR",
+          "model": "VVER-1200",
+          "gross_mw": 1200,
+          "net_mw": 1100,
+          "thermal_mw": 3200,
+          "const_start": "2022-11",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "EG-3",
+          "name": "EL DABAA-3",
+          "type": "PWR",
+          "model": "VVER-1200",
+          "gross_mw": 1200,
+          "net_mw": 1100,
+          "thermal_mw": 3200,
+          "const_start": "2023-05",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "EG-4",
+          "name": "EL DABAA-4",
+          "type": "PWR",
+          "model": "VVER-1200",
+          "gross_mw": 1200,
+          "net_mw": 1100,
+          "thermal_mw": 3200,
+          "const_start": "2024-01",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 4,
+      "total_gross_mw": 4800,
+      "has_operational": false
+    },
+    {
+      "site_name": "Kudankulam, Tamil Nadu",
+      "country": "India",
+      "country_code": "IN",
+      "lat": 8.168,
+      "lon": 77.712,
+      "reactors": [
+        {
+          "code": "IN-35",
+          "name": "KUDANKULAM-3",
+          "type": "PWR",
+          "model": "VVER V-412",
+          "gross_mw": 1000,
+          "net_mw": 917,
+          "thermal_mw": 3000,
+          "const_start": "2017-06",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "IN-36",
+          "name": "KUDANKULAM-4",
+          "type": "PWR",
+          "model": "VVER V-412",
+          "gross_mw": 1000,
+          "net_mw": 917,
+          "thermal_mw": 3000,
+          "const_start": "2017-10",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "IN-37",
+          "name": "KUDANKULAM-5",
+          "type": "PWR",
+          "model": "VVERV412",
+          "gross_mw": 1000,
+          "net_mw": 917,
+          "thermal_mw": 3000,
+          "const_start": "2021-06",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "IN-38",
+          "name": "KUDANKULAM-6",
+          "type": "PWR",
+          "model": "VVERV412",
+          "gross_mw": 1000,
+          "net_mw": 917,
+          "thermal_mw": 3000,
+          "const_start": "2021-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 4,
+      "total_gross_mw": 4000,
+      "has_operational": false
+    },
+    {
+      "site_name": "Bushehr, Bushehr Province",
+      "country": "Iran",
+      "country_code": "IR",
+      "lat": 28.829,
+      "lon": 50.887,
+      "reactors": [
+        {
+          "code": "IR-2",
+          "name": "BUSHEHR-2",
+          "type": "PWR",
+          "model": "V-528 VVER-100",
+          "gross_mw": 1057,
+          "net_mw": 974,
+          "thermal_mw": 3012,
+          "const_start": "2019-09",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 1,
+      "total_gross_mw": 1057,
+      "has_operational": false
+    },
+    {
+      "site_name": "Chashma, Mianwali District",
+      "country": "Pakistan",
+      "country_code": "PK",
+      "lat": 32.393,
+      "lon": 71.461,
+      "reactors": [
+        {
+          "code": "PK-8",
+          "name": "CHASNUPP-5",
+          "type": "PWR",
+          "model": "Hualong-1",
+          "gross_mw": 1200,
+          "net_mw": 1117,
+          "thermal_mw": 3180,
+          "const_start": "2024-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 1,
+      "total_gross_mw": 1200,
+      "has_operational": false
+    },
+    {
+      "site_name": "Paradise Point, Karachi",
+      "country": "Pakistan",
+      "country_code": "PK",
+      "lat": 24.842,
+      "lon": 66.789,
+      "reactors": [
+        {
+          "code": "PK-6",
+          "name": "KANUPP-2",
+          "type": "PWR",
+          "model": "ACP-1000",
+          "gross_mw": 1100,
+          "net_mw": 1017,
+          "thermal_mw": 3060,
+          "const_start": "2015-08",
+          "grid_connection": "2021-03",
+          "commercial_op": "2021-05",
+          "status": "Operational"
+        },
+        {
+          "code": "PK-7",
+          "name": "KANUPP-3",
+          "type": "PWR",
+          "model": "ACP-1000",
+          "gross_mw": 1100,
+          "net_mw": 1017,
+          "thermal_mw": 3060,
+          "const_start": "2016-05",
+          "grid_connection": "2022-03",
+          "commercial_op": "2022-04",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2200,
+      "has_operational": true
+    },
+    {
+      "site_name": "Kurchatov, Kursk Oblast",
+      "country": "Russia",
+      "country_code": "RU",
+      "lat": 51.677,
+      "lon": 35.606,
+      "reactors": [
+        {
+          "code": "RU-166",
+          "name": "KURSK 2-1",
+          "type": "PWR",
+          "model": "VVER V-510",
+          "gross_mw": 1255,
+          "net_mw": 1200,
+          "thermal_mw": 3300,
+          "const_start": "2018-04",
+          "grid_connection": "2025-06",
+          "commercial_op": "2025-12",
+          "status": "Under Construction"
+        },
+        {
+          "code": "RU-189",
+          "name": "KURSK 2-2",
+          "type": "PWR",
+          "model": "VVER V-510",
+          "gross_mw": 1255,
+          "net_mw": 1200,
+          "thermal_mw": 3300,
+          "const_start": "2019-04",
+          "grid_connection": "2027-03",
+          "commercial_op": "2027-11",
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2510,
+      "has_operational": false
+    },
+    {
+      "site_name": "Seversk, Tomsk Oblast",
+      "country": "Russia",
+      "country_code": "RU",
+      "lat": 56.6,
+      "lon": 84.89,
+      "reactors": [
+        {
+          "code": "RU-208",
+          "name": "BREST-OD-300",
+          "type": "FBR",
+          "model": "BREST-OD-300",
+          "gross_mw": 320,
+          "net_mw": 300,
+          "thermal_mw": 700,
+          "const_start": "2021-06",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 1,
+      "total_gross_mw": 320,
+      "has_operational": false
+    },
+    {
+      "site_name": "Sosnovy Bor, Leningrad Oblast",
+      "country": "Russia",
+      "country_code": "RU",
+      "lat": 59.847,
+      "lon": 29.064,
+      "reactors": [
+        {
+          "code": "RU-165",
+          "name": "LENINGRAD 2-3",
+          "type": "PWR",
+          "model": "VVER V-491",
+          "gross_mw": 1199,
+          "net_mw": 1150,
+          "thermal_mw": 3200,
+          "const_start": "2024-03",
+          "grid_connection": "2030-12",
+          "commercial_op": "2031-01",
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 1,
+      "total_gross_mw": 1199,
+      "has_operational": false
+    },
+    {
+      "site_name": "Uljin, North Gyeongsang",
+      "country": "South Korea",
+      "country_code": "KR",
+      "lat": 37.093,
+      "lon": 129.388,
+      "reactors": [
+        {
+          "code": "KR-27",
+          "name": "SHIN-HANUL-1",
+          "type": "PWR",
+          "model": "APR-1400",
+          "gross_mw": 1455,
+          "net_mw": 1429,
+          "thermal_mw": 3983,
+          "const_start": "2012-07",
+          "grid_connection": "2022-06",
+          "commercial_op": "2022-12",
+          "status": "Operational"
+        },
+        {
+          "code": "KR-28",
+          "name": "SHIN-HANUL-2",
+          "type": "PWR",
+          "model": "APR-1400",
+          "gross_mw": 1455,
+          "net_mw": 1416,
+          "thermal_mw": 3983,
+          "const_start": "2013-06",
+          "grid_connection": "2023-12",
+          "commercial_op": "2024-04",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2910,
+      "has_operational": true
+    },
+    {
+      "site_name": "Ulju, Ulsan",
+      "country": "South Korea",
+      "country_code": "KR",
+      "lat": 35.32,
+      "lon": 129.292,
+      "reactors": [
+        {
+          "code": "KR-29",
+          "name": "SAEUL-3",
+          "type": "PWR",
+          "model": "APR-1400",
+          "gross_mw": 1400,
+          "net_mw": 1340,
+          "thermal_mw": 3983,
+          "const_start": "2017-04",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "KR-30",
+          "name": "SAEUL-4",
+          "type": "PWR",
+          "model": "APR-1400",
+          "gross_mw": 1400,
+          "net_mw": 1340,
+          "thermal_mw": 3983,
+          "const_start": "2018-09",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2800,
+      "has_operational": false
+    },
+    {
+      "site_name": "Akkuyu, Mersin Province",
+      "country": "T\u00fcrkiye",
+      "country_code": "TR",
+      "lat": 36.145,
+      "lon": 33.542,
+      "reactors": [
+        {
+          "code": "TR-1",
+          "name": "AKKUYU-1",
+          "type": "PWR",
+          "model": "VVER V-509",
+          "gross_mw": 1200,
+          "net_mw": 1114,
+          "thermal_mw": 3200,
+          "const_start": "2018-04",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "TR-2",
+          "name": "AKKUYU-2",
+          "type": "PWR",
+          "model": "VVER V-509",
+          "gross_mw": 1200,
+          "net_mw": 1114,
+          "thermal_mw": 3200,
+          "const_start": "2020-04",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "TR-3",
+          "name": "AKKUYU-3",
+          "type": "PWR",
+          "model": "VVER V-509",
+          "gross_mw": 1200,
+          "net_mw": 1114,
+          "thermal_mw": 3200,
+          "const_start": "2021-03",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "TR-4",
+          "name": "AKKUYU-4",
+          "type": "PWR",
+          "model": "VVER V-509",
+          "gross_mw": 1200,
+          "net_mw": 1114,
+          "thermal_mw": 3200,
+          "const_start": "2022-07",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 4,
+      "total_gross_mw": 4800,
+      "has_operational": false
+    },
+    {
+      "site_name": "Barakah, Abu Dhabi",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "lat": 24.086,
+      "lon": 52.192,
+      "reactors": [
+        {
+          "code": "AE-01",
+          "name": "BARAKAH-1",
+          "type": "PWR",
+          "model": "APR-1400",
+          "gross_mw": 1417,
+          "net_mw": 1337,
+          "thermal_mw": 3983,
+          "const_start": "2012-07",
+          "grid_connection": "2020-08",
+          "commercial_op": "2021-04",
+          "status": "Operational"
+        },
+        {
+          "code": "AE-02",
+          "name": "BARAKAH-2",
+          "type": "PWR",
+          "model": "APR-1400",
+          "gross_mw": 1417,
+          "net_mw": 1337,
+          "thermal_mw": 3983,
+          "const_start": "2013-04",
+          "grid_connection": "2021-09",
+          "commercial_op": "2022-03",
+          "status": "Operational"
+        },
+        {
+          "code": "AE-03",
+          "name": "BARAKAH-3",
+          "type": "PWR",
+          "model": "APR-1400",
+          "gross_mw": 1417,
+          "net_mw": 1337,
+          "thermal_mw": 3983,
+          "const_start": "2014-09",
+          "grid_connection": "2022-10",
+          "commercial_op": "2023-02",
+          "status": "Operational"
+        },
+        {
+          "code": "AE-04",
+          "name": "BARAKAH-4",
+          "type": "PWR",
+          "model": "APR-1400",
+          "gross_mw": 1417,
+          "net_mw": 1337,
+          "thermal_mw": 3983,
+          "const_start": "2015-07",
+          "grid_connection": "2024-03",
+          "commercial_op": "2024-09",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 4,
+      "total_gross_mw": 5668,
+      "has_operational": true
+    },
+    {
+      "site_name": "Hinkley Point, Somerset",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "lat": 51.207,
+      "lon": -3.131,
+      "reactors": [
+        {
+          "code": "GB-25A",
+          "name": "HINKLEY POINT C-1",
+          "type": "PWR",
+          "model": "EPR-1750",
+          "gross_mw": 1720,
+          "net_mw": 1630,
+          "thermal_mw": 4524,
+          "const_start": "2018-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        },
+        {
+          "code": "GB-25B",
+          "name": "HINKLEY POINT C-2",
+          "type": "PWR",
+          "model": "EPR-1750",
+          "gross_mw": 1720,
+          "net_mw": 1630,
+          "thermal_mw": 4524,
+          "const_start": "2019-12",
+          "grid_connection": null,
+          "commercial_op": null,
+          "status": "Under Construction"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 3440,
+      "has_operational": false
+    },
+    {
+      "site_name": "Waynesboro, Georgia",
+      "country": "United States",
+      "country_code": "US",
+      "lat": 33.143,
+      "lon": -81.763,
+      "reactors": [
+        {
+          "code": "US-5025",
+          "name": "VOGTLE-3",
+          "type": "PWR",
+          "model": "AP-1000",
+          "gross_mw": 1250,
+          "net_mw": 1117,
+          "thermal_mw": 3400,
+          "const_start": "2013-03",
+          "grid_connection": "2023-03",
+          "commercial_op": "2023-07",
+          "status": "Operational"
+        },
+        {
+          "code": "US-5026",
+          "name": "VOGTLE-4",
+          "type": "PWR",
+          "model": "AP-1000",
+          "gross_mw": 1250,
+          "net_mw": 1117,
+          "thermal_mw": 3400,
+          "const_start": "2013-11",
+          "grid_connection": "2024-03",
+          "commercial_op": "2024-04",
+          "status": "Operational"
+        }
+      ],
+      "reactor_count": 2,
+      "total_gross_mw": 2500,
+      "has_operational": true
+    }
+  ]
+}
