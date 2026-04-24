@@ -9,7 +9,13 @@
 <body>
   <header>
     <div class="header-inner">
-      <h1>Post-Fukushima Nuclear Reactor Tracker</h1>
+      <div class="header-top">
+        <h1>Post-Fukushima Nuclear Reactor Tracker</h1>
+        <nav class="page-nav" aria-label="Primary">
+          <a href="index.html" class="nav-link active">Map</a>
+          <a href="breakdown.html" class="nav-link">Country breakdown</a>
+        </nav>
+      </div>
       <p class="tagline">
         Nuclear power reactors whose construction commenced after the 2011 Fukushima Daiichi accident
         (construction start on or after 1&nbsp;January&nbsp;2012).
@@ -46,11 +52,6 @@
           </li>
         </ul>
         <p class="hint">Hover a marker for unit-level details. Scroll to zoom, drag to pan.</p>
-      </section>
-
-      <section class="country-list">
-        <h2>Countries with post&#8209;2012 construction starts</h2>
-        <ul id="country-breakdown"></ul>
       </section>
 
       <section class="source">

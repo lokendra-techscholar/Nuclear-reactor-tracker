@@ -208,22 +208,6 @@
     document.getElementById('stat-countries').textContent = countries.length.toLocaleString();
     const mwEl = document.getElementById('stat-mw');
     mwEl.innerHTML = reactorData.total_gross_mw.toLocaleString() + ' MW<sub>e</sub>';
-
-    const byCountry = {};
-    reactorData.sites.forEach(s => {
-      byCountry[s.country] = byCountry[s.country] || { units: 0, mw: 0 };
-      byCountry[s.country].units += s.reactor_count;
-      byCountry[s.country].mw += s.total_gross_mw;
-    });
-
-    const ul = document.getElementById('country-breakdown');
-    const rows = Object.keys(byCountry).sort((a, b) => byCountry[b].units - byCountry[a].units);
-    rows.forEach(c => {
-      const li = document.createElement('li');
-      const cs = byCountry[c];
-      li.innerHTML = `<span>${escapeHtml(c)}</span><span class="c-units">${cs.units} &middot; ${cs.mw.toLocaleString()} MW</span>`;
-      ul.appendChild(li);
-    });
   }
 
   async function boot() {
