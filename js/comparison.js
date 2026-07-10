@@ -64,22 +64,50 @@
     const preCountries = new Set(pre.sites.map(s => s.country)).size;
     const postCountries = new Set(post.sites.map(s => s.country)).size;
 
-    document.getElementById('pre-units').textContent = pre.total_reactors;
-    document.getElementById('pre-mw').innerHTML = pre.total_gross_mw.toLocaleString() + ' MW<sub>e</sub>';
-    document.getElementById('pre-countries').textContent = preCountries;
-    document.getElementById('post-units').textContent = post.total_reactors;
-    document.getElementById('post-mw').innerHTML = post.total_gross_mw.toLocaleString() + ' MW<sub>e</sub>';
-    document.getElementById('post-countries').textContent = postCountries;
+    // Optional era-card layout (only present on some pages)
+    setText('pre-units', pre.total_reactors);
+    setHtml('pre-mw', pre.total_gross_mw.toLocaleString() + ' MW<sub>e</sub>');
+    setText('pre-countries', preCountries);
+    setText('post-units', post.total_reactors);
+    setHtml('post-mw', post.total_gross_mw.toLocaleString() + ' MW<sub>e</sub>');
+    setText('post-countries', postCountries);
 
     const dUnits = post.total_reactors - pre.total_reactors;
-    const dMwPct = ((post.total_gross_mw - pre.total_gross_mw) / pre.total_gross_mw) * 100;
+    const dMw = post.total_gross_mw - pre.total_gross_mw;
+    const dMwPct = (dMw / pre.total_gross_mw) * 100;
+    const dCountries = postCountries - preCountries;
+
+    // Home-page highlight cards (only present on the home page)
+    setText('hl-pre-units', pre.total_reactors);
+    setText('hl-post-units', post.total_reactors);
+    setDelta('hl-units-delta', dUnits, `${signNum(dUnits)} units`);
+    setText('hl-pre-mw', (pre.total_gross_mw / 1000).toFixed(1));
+    setText('hl-post-mw', (post.total_gross_mw / 1000).toFixed(1));
+    setDelta('hl-mw-delta', dMw, `${signNum(dMw > 0 ? +dMwPct.toFixed(0) : +dMwPct.toFixed(0))}% capacity`);
+    setText('hl-pre-countries', preCountries);
+    setText('hl-post-countries', postCountries);
+    setDelta('hl-countries-delta', dCountries, `${signNum(dCountries)} countries`);
+
     const verdict = document.getElementById('comparison-verdict');
-    verdict.innerHTML =
-      `Worldwide, construction commenced on <strong>${post.total_reactors}</strong> reactors in the 13 years after ` +
-      `Fukushima versus <strong>${pre.total_reactors}</strong> in the 13 years before ` +
-      `(${dUnits >= 0 ? '+' : ''}${dUnits} units, ${dMwPct >= 0 ? '+' : ''}${dMwPct.toFixed(0)}% gross capacity), ` +
-      `while the number of countries starting new builds rose from ${new Set(pre.sites.map(s => s.country)).size} ` +
-      `to ${new Set(post.sites.map(s => s.country)).size}.`;
+    if (verdict) {
+      verdict.innerHTML =
+        `Worldwide, construction commenced on <strong>${post.total_reactors}</strong> reactors in the 13 years after ` +
+        `Fukushima versus <strong>${pre.total_reactors}</strong> in the 13 years before ` +
+        `(${signNum(dUnits)} units, ${dMwPct >= 0 ? '+' : ''}${dMwPct.toFixed(0)}% gross capacity), ` +
+        `while the number of countries starting new builds rose from <strong>${preCountries}</strong> ` +
+        `to <strong>${postCountries}</strong>.`;
+    }
+  }
+
+  function signNum(v) { return (v > 0 ? '+' : '') + v; }
+  function setText(id, v) { const el = document.getElementById(id); if (el) el.textContent = v; }
+  function setHtml(id, v) { const el = document.getElementById(id); if (el) el.innerHTML = v; }
+  function setDelta(id, v, label) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = label;
+    el.classList.remove('delta-up', 'delta-down', 'delta-flat');
+    el.classList.add(v > 0 ? 'delta-up' : v < 0 ? 'delta-down' : 'delta-flat');
   }
 
   function setMetric(m) {

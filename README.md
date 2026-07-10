@@ -70,10 +70,15 @@ Internet access is required when loading the page for the first time.
 
 ## Pages
 
-- `index.html` — world map of post-Fukushima construction starts (2012-01 → 2024-12)
-- `prefukushima.html` — world map of pre-Fukushima construction starts (1998-01 → 2010-12)
-- `comparison.html` — pre vs post comparison: grouped bar chart (units / MW toggle) and per-country table
-- `breakdown.html` — pie chart of each country's share of post-2012 gross capacity
+The nav bar has three entries: **Home**, **Nuclear maps** (dropdown), and
+**Country breakdown** (dropdown).
+
+- `index.html` — **Home**: the pre-vs-post comparison (headline, highlight
+  cards, grouped bar chart with units / MW toggle, and full country table)
+- `maps-post.html` — Nuclear maps ▸ Post-Fukushima world map (2012-01 → 2024-12)
+- `maps-pre.html` — Nuclear maps ▸ Pre-Fukushima world map (1998-01 → 2010-12)
+- `breakdown-post.html` — Country breakdown ▸ Post-Fukushima pie chart
+- `breakdown-pre.html` — Country breakdown ▸ Pre-Fukushima pie chart
 
 The pre-Fukushima window (13 years) mirrors the post-Fukushima window
 (13 years); the year 2011 itself is excluded from both. Pre-window data
@@ -86,14 +91,16 @@ V.C. Summer 2/3) do not appear in RDS-2 and are therefore not counted.
 
 ```
 .
-├── index.html                 # post-Fukushima map
-├── prefukushima.html          # pre-Fukushima map
-├── comparison.html            # pre vs post charts + table
-├── breakdown.html             # country share pie chart
+├── index.html                 # Home (pre vs post comparison)
+├── maps-post.html             # post-Fukushima map
+├── maps-pre.html              # pre-Fukushima map
+├── breakdown-post.html        # post-Fukushima country pie chart
+├── breakdown-pre.html         # pre-Fukushima country pie chart
 ├── css/styles.css             # brand-theme styles
+├── js/nav.js                  # shared dropdown-nav behaviour
 ├── js/app.js                  # shared D3 map + tooltip logic
-├── js/breakdown.js            # pie chart logic
-├── js/comparison.js           # comparison chart + table logic
+├── js/breakdown.js            # pie chart logic (configurable data URL)
+├── js/comparison.js           # home comparison chart + table logic
 ├── data/reactors.json         # post-2012 IAEA data + plant coordinates
 ├── data/reactors_pre.json     # 1998–2010 IAEA data + plant coordinates
 └── docs/IAEA_document 1.pdf   # source reference

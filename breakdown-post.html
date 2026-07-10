@@ -12,10 +12,25 @@
       <div class="header-top">
         <h1>Post-Fukushima Nuclear Reactor Tracker</h1>
         <nav class="page-nav" aria-label="Primary">
-          <a href="index.html" class="nav-link">Post&#8209;Fukushima map</a>
-          <a href="prefukushima.html" class="nav-link">Pre&#8209;Fukushima map</a>
-          <a href="comparison.html" class="nav-link">Pre vs post</a>
-          <a href="breakdown.html" class="nav-link active">Country breakdown</a>
+          <a href="index.html" class="nav-link">Home</a>
+          <div class="nav-item has-dropdown">
+            <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-haspopup="true">
+              Nuclear maps <span class="caret">&#9662;</span>
+            </button>
+            <div class="nav-dropdown">
+              <a href="maps-post.html">Post&#8209;Fukushima (2012&ndash;2024)</a>
+              <a href="maps-pre.html">Pre&#8209;Fukushima (1998&ndash;2010)</a>
+            </div>
+          </div>
+          <div class="nav-item has-dropdown">
+            <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-haspopup="true">
+              Country breakdown <span class="caret">&#9662;</span>
+            </button>
+            <div class="nav-dropdown">
+              <a href="breakdown-post.html">Post&#8209;Fukushima (2012&ndash;2024)</a>
+              <a href="breakdown-pre.html">Pre&#8209;Fukushima (1998&ndash;2010)</a>
+            </div>
+          </div>
         </nav>
       </div>
       <p class="tagline">
@@ -56,7 +71,9 @@
     </section>
   </main>
 
+  <script>window.BREAKDOWN_CONFIG = { dataUrl: 'data/reactors.json' };</script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+  <script src="js/nav.js"></script>
   <script src="js/breakdown.js"></script>
 </body>
 </html>
