@@ -1,7 +1,8 @@
 (function () {
   'use strict';
 
-  const REACTOR_DATA_URL = 'data/reactors.json';
+  const CFG = window.BREAKDOWN_CONFIG || {};
+  const REACTOR_DATA_URL = CFG.dataUrl || 'data/reactors.json';
 
   // Brand-aligned palette: warm tones spanning llama (#620d3c) through
   // marigold (#f1a222), with a few deeper / cooler accents so 14 slices

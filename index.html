@@ -3,88 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post-Fukushima Nuclear Reactor Construction Tracker</title>
+  <title>Nuclear Reactor Construction Tracker — Pre vs Post Fukushima</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="page-scroll">
   <header>
     <div class="header-inner">
       <div class="header-top">
-        <h1>Post-Fukushima Nuclear Reactor Tracker</h1>
+        <h1>Nuclear Reactor Construction Tracker</h1>
         <nav class="page-nav" aria-label="Primary">
-          <a href="index.html" class="nav-link active">Post&#8209;Fukushima map</a>
-          <a href="prefukushima.html" class="nav-link">Pre&#8209;Fukushima map</a>
-          <a href="comparison.html" class="nav-link">Pre vs post</a>
-          <a href="breakdown.html" class="nav-link">Country breakdown</a>
+          <a href="index.html" class="nav-link">Home</a>
+          <div class="nav-item has-dropdown">
+            <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-haspopup="true">
+              Nuclear maps <span class="caret">&#9662;</span>
+            </button>
+            <div class="nav-dropdown">
+              <a href="maps-post.html">Post&#8209;Fukushima (2012&ndash;2024)</a>
+              <a href="maps-pre.html">Pre&#8209;Fukushima (1998&ndash;2010)</a>
+            </div>
+          </div>
+          <div class="nav-item has-dropdown">
+            <button type="button" class="nav-link nav-toggle" aria-expanded="false" aria-haspopup="true">
+              Country breakdown <span class="caret">&#9662;</span>
+            </button>
+            <div class="nav-dropdown">
+              <a href="breakdown-post.html">Post&#8209;Fukushima (2012&ndash;2024)</a>
+              <a href="breakdown-pre.html">Pre&#8209;Fukushima (1998&ndash;2010)</a>
+            </div>
+          </div>
         </nav>
       </div>
-      <p class="tagline">
-        Nuclear power reactors whose construction commenced after the 2011 Fukushima Daiichi accident
-        (construction start on or after 1&nbsp;January&nbsp;2012).
-      </p>
     </div>
   </header>
 
-  <main>
-    <aside id="sidebar">
-      <section class="summary-block">
-        <h2>At a glance</h2>
-        <dl class="stats">
-          <div><dt>Sites</dt><dd id="stat-sites">–</dd></div>
-          <div><dt>Reactor units</dt><dd id="stat-units">–</dd></div>
-          <div><dt>Countries</dt><dd id="stat-countries">–</dd></div>
-          <div><dt>Total gross capacity</dt><dd id="stat-mw">– MW<sub>e</sub></dd></div>
-        </dl>
-      </section>
+  <main class="home-main">
+    <section class="hero">
+      <p class="hero-kicker">IAEA data &middot; two equal 13&#8209;year windows</p>
+      <h2 class="hero-headline">
+        Nuclear energy did not decline post&#8209;Fukushima disaster, IAEA data shows.
+      </h2>
+      <p class="hero-sub">
+        Comparing reactor construction starts in the 13&nbsp;years <em>before</em> the 2011
+        Fukushima Daiichi accident (1&nbsp;Jan&nbsp;1998&nbsp;&ndash;&nbsp;31&nbsp;Dec&nbsp;2010)
+        with the 13&nbsp;years <em>after</em>
+        (1&nbsp;Jan&nbsp;2012&nbsp;&ndash;&nbsp;31&nbsp;Dec&nbsp;2024). The year 2011 itself is
+        excluded from both windows.
+      </p>
+    </section>
 
-      <section class="legend">
-        <h2>Legend</h2>
-        <ul>
-          <li>
-            <span class="swatch swatch-operational"></span>
-            Operational &mdash; unit connected to the grid
-          </li>
-          <li>
-            <span class="swatch swatch-construction"></span>
-            Under construction (as of 31&nbsp;Dec&nbsp;2024)
-          </li>
-          <li>
-            <span class="swatch swatch-mixed"></span>
-            Mixed site &mdash; some units operating, some still under construction
-          </li>
-        </ul>
-        <p class="hint">Hover a marker for unit-level details. Scroll to zoom, drag to pan.</p>
-      </section>
-
-      <section class="source">
-        <h2>Source</h2>
-        <p>
-          International Atomic Energy Agency,
-          <em>Nuclear Power Reactors in the World</em>,
-          Reference Data Series No.&nbsp;2, 2025 Edition (IAEA-RDS-2/45).
-        </p>
-        <p class="fine-print">
-          Capacity figures shown are headline <strong>gross</strong> electrical output
-          in MW<sub>e</sub>. Dates reflect the year and month of first concrete
-          pouring (construction start), initial grid connection, and start of
-          commercial operation as reported in IAEA Tables 10, 13 and 14.
-        </p>
-      </section>
-    </aside>
-
-    <div id="map-container">
-      <svg id="map" role="img" aria-label="World map showing nuclear reactors whose construction started after 2011."></svg>
-      <div id="tooltip" role="tooltip" aria-hidden="true"></div>
-      <div id="map-controls">
-        <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
-        <button type="button" id="zoom-out" aria-label="Zoom out">&minus;</button>
-        <button type="button" id="zoom-reset" aria-label="Reset view">&#x21bb;</button>
+    <section class="home-highlights" aria-label="Headline figures">
+      <div class="hl-card">
+        <div class="hl-label">Reactor units began construction</div>
+        <div class="hl-figures">
+          <div class="hl-pre"><span id="hl-pre-units">&ndash;</span><small>Pre</small></div>
+          <div class="hl-arrow">&rarr;</div>
+          <div class="hl-post"><span id="hl-post-units">&ndash;</span><small>Post</small></div>
+        </div>
+        <div class="hl-delta" id="hl-units-delta">&nbsp;</div>
       </div>
-    </div>
+      <div class="hl-card">
+        <div class="hl-label">Gross capacity started (GW<sub>e</sub>)</div>
+        <div class="hl-figures">
+          <div class="hl-pre"><span id="hl-pre-mw">&ndash;</span><small>Pre</small></div>
+          <div class="hl-arrow">&rarr;</div>
+          <div class="hl-post"><span id="hl-post-mw">&ndash;</span><small>Post</small></div>
+        </div>
+        <div class="hl-delta" id="hl-mw-delta">&nbsp;</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-label">Countries starting new builds</div>
+        <div class="hl-figures">
+          <div class="hl-pre"><span id="hl-pre-countries">&ndash;</span><small>Pre</small></div>
+          <div class="hl-arrow">&rarr;</div>
+          <div class="hl-post"><span id="hl-post-countries">&ndash;</span><small>Post</small></div>
+        </div>
+        <div class="hl-delta" id="hl-countries-delta">&nbsp;</div>
+      </div>
+    </section>
+
+    <p id="comparison-verdict" class="comparison-verdict home-verdict"></p>
+
+    <section class="home-chart-section">
+      <div class="section-head">
+        <h3>Construction starts by country</h3>
+        <div class="metric-toggle" role="group" aria-label="Chart metric">
+          <button type="button" id="toggle-units" class="metric-btn active">Reactor units</button>
+          <button type="button" id="toggle-mw" class="metric-btn">Gross capacity (MW)</button>
+        </div>
+      </div>
+      <div class="chart-legend">
+        <span><span class="cl-swatch cl-pre"></span> Pre&#8209;Fukushima (1998&ndash;2010)</span>
+        <span><span class="cl-swatch cl-post"></span> Post&#8209;Fukushima (2012&ndash;2024)</span>
+      </div>
+      <div id="bar-container">
+        <svg id="bar-chart" role="img"
+             aria-label="Grouped bar chart comparing reactor construction starts by country, pre versus post Fukushima."></svg>
+        <div id="bar-tooltip" role="tooltip" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="home-table-section">
+      <div class="section-head"><h3>Full country table</h3></div>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table" aria-label="Construction starts by country, pre versus post Fukushima">
+          <thead>
+            <tr>
+              <th rowspan="2">Country</th>
+              <th colspan="2">Pre (1998&ndash;2010)</th>
+              <th colspan="2">Post (2012&ndash;2024)</th>
+              <th rowspan="2">&Delta; units</th>
+            </tr>
+            <tr>
+              <th>Units</th><th>MW</th>
+              <th>Units</th><th>MW</th>
+            </tr>
+          </thead>
+          <tbody id="comparison-tbody"></tbody>
+          <tfoot id="comparison-tfoot"></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="home-explore">
+      <h3>Explore the data</h3>
+      <div class="explore-cards">
+        <a class="explore-card" href="maps-post.html">
+          <span class="explore-title">Post&#8209;Fukushima map</span>
+          <span class="explore-desc">81 reactor units, 2012&ndash;2024, on a world map with per-plant detail.</span>
+        </a>
+        <a class="explore-card" href="maps-pre.html">
+          <span class="explore-title">Pre&#8209;Fukushima map</span>
+          <span class="explore-desc">73 reactor units, 1998&ndash;2010, including units later suspended.</span>
+        </a>
+        <a class="explore-card" href="breakdown-post.html">
+          <span class="explore-title">Post&#8209;Fukushima breakdown</span>
+          <span class="explore-desc">Each country's share of post&#8209;2012 gross capacity.</span>
+        </a>
+        <a class="explore-card" href="breakdown-pre.html">
+          <span class="explore-title">Pre&#8209;Fukushima breakdown</span>
+          <span class="explore-desc">Each country's share of 1998&ndash;2010 gross capacity.</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="home-footer">
+      <p>
+        Source: International Atomic Energy Agency, <em>Nuclear Power Reactors in the World</em>,
+        Reference Data Series No.&nbsp;2, 2025 Edition (IAEA-RDS-2/45). Capacity figures are headline
+        gross MW<sub>e</sub>; construction start is the first pouring of concrete. Reactors cancelled
+        before entering the IAEA's tables are not counted.
+      </p>
+    </footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/comparison.js"></script>
 </body>
 </html>
