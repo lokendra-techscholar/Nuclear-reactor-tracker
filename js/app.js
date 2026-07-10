@@ -1,8 +1,11 @@
 (function () {
   'use strict';
 
+  // Per-page config: set window.TRACKER_CONFIG = { dataUrl: '...' } before
+  // this script loads to point the map at a different dataset.
+  const CFG = window.TRACKER_CONFIG || {};
   const WORLD_TOPO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json';
-  const REACTOR_DATA_URL = 'data/reactors.json';
+  const REACTOR_DATA_URL = CFG.dataUrl || 'data/reactors.json';
 
   const svg = d3.select('#map');
   const tooltipEl = document.getElementById('tooltip');
@@ -49,10 +52,13 @@
     const sites = reactorData.sites;
 
     const classify = (site) => {
-      const opCount = site.reactors.filter(r => r.status === 'Operational').length;
-      const totCount = site.reactors.length;
-      if (opCount === totCount) return 'operational';
-      if (opCount === 0) return 'construction';
+      const statuses = new Set(site.reactors.map(r => r.status));
+      if (statuses.size === 1) {
+        const only = statuses.values().next().value;
+        if (only === 'Operational') return 'operational';
+        if (only === 'Under Construction') return 'construction';
+        if (only === 'Suspended Operation') return 'suspended';
+      }
       return 'mixed';
     };
 
@@ -129,8 +135,12 @@
     </div>`;
 
     d.reactors.forEach(r => {
-      const status = r.status === 'Operational' ? 'op' : 'con';
-      const statusLabel = r.status === 'Operational' ? 'Operational' : 'Construction';
+      let status = 'con', statusLabel = 'Construction';
+      if (r.status === 'Operational') { status = 'op'; statusLabel = 'Operational'; }
+      else if (r.status === 'Suspended Operation') { status = 'sus'; statusLabel = 'Suspended'; }
+      const suspendedRow = r.suspended_date
+        ? `<dt>Suspended since</dt><dd>${fmtDate(r.suspended_date)}</dd>`
+        : '';
       html += `
         <div class="tt-reactor">
           <div class="tt-reactor-head">
@@ -143,6 +153,7 @@
             <dt>Construction start</dt><dd>${fmtDate(r.const_start)}</dd>
             <dt>Grid connection</dt><dd>${fmtDate(r.grid_connection)}</dd>
             <dt>Commercial op.</dt><dd>${fmtDate(r.commercial_op)}</dd>
+            ${suspendedRow}
           </dl>
         </div>`;
     });

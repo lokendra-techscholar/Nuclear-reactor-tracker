@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post-Fukushima Nuclear Reactor Construction Tracker</title>
+  <title>Pre-Fukushima map — Nuclear Reactor Construction Tracker</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
     <div class="header-inner">
       <div class="header-top">
-        <h1>Post-Fukushima Nuclear Reactor Tracker</h1>
+        <h1>Pre-Fukushima Nuclear Reactor Tracker</h1>
         <nav class="page-nav" aria-label="Primary">
-          <a href="index.html" class="nav-link active">Post&#8209;Fukushima map</a>
-          <a href="prefukushima.html" class="nav-link">Pre&#8209;Fukushima map</a>
+          <a href="index.html" class="nav-link">Post&#8209;Fukushima map</a>
+          <a href="prefukushima.html" class="nav-link active">Pre&#8209;Fukushima map</a>
           <a href="comparison.html" class="nav-link">Pre vs post</a>
           <a href="breakdown.html" class="nav-link">Country breakdown</a>
         </nav>
       </div>
       <p class="tagline">
-        Nuclear power reactors whose construction commenced after the 2011 Fukushima Daiichi accident
-        (construction start on or after 1&nbsp;January&nbsp;2012).
+        Nuclear power reactors whose construction commenced in the 13 years before the
+        Fukushima Daiichi accident (construction start 1&nbsp;January&nbsp;1998 &ndash;
+        31&nbsp;December&nbsp;2010).
       </p>
     </div>
   </header>
@@ -46,11 +47,15 @@
           </li>
           <li>
             <span class="swatch swatch-construction"></span>
-            Under construction (as of 31&nbsp;Dec&nbsp;2024)
+            Still under construction (as of 31&nbsp;Dec&nbsp;2024)
+          </li>
+          <li>
+            <span class="swatch swatch-suspended"></span>
+            Suspended operation (as of 31&nbsp;Dec&nbsp;2024)
           </li>
           <li>
             <span class="swatch swatch-mixed"></span>
-            Mixed site &mdash; some units operating, some still under construction
+            Mixed site &mdash; units in different statuses
           </li>
         </ul>
         <p class="hint">Hover a marker for unit-level details. Scroll to zoom, drag to pan.</p>
@@ -67,13 +72,15 @@
           Capacity figures shown are headline <strong>gross</strong> electrical output
           in MW<sub>e</sub>. Dates reflect the year and month of first concrete
           pouring (construction start), initial grid connection, and start of
-          commercial operation as reported in IAEA Tables 10, 13 and 14.
+          commercial operation as reported in IAEA Tables 13, 14 and 15.
+          Several Japanese units in this window have been in suspended operation
+          since 2011.
         </p>
       </section>
     </aside>
 
     <div id="map-container">
-      <svg id="map" role="img" aria-label="World map showing nuclear reactors whose construction started after 2011."></svg>
+      <svg id="map" role="img" aria-label="World map showing nuclear reactors whose construction started between 1998 and 2010."></svg>
       <div id="tooltip" role="tooltip" aria-hidden="true"></div>
       <div id="map-controls">
         <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
@@ -83,6 +90,7 @@
     </div>
   </main>
 
+  <script>window.TRACKER_CONFIG = { dataUrl: 'data/reactors_pre.json' };</script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="js/app.js"></script>
