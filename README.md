@@ -68,20 +68,38 @@ External dependencies are loaded from public CDNs:
 
 Internet access is required when loading the page for the first time.
 
+## Pages
+
+- `index.html` — world map of post-Fukushima construction starts (2012-01 → 2024-12)
+- `prefukushima.html` — world map of pre-Fukushima construction starts (1998-01 → 2010-12)
+- `comparison.html` — pre vs post comparison: grouped bar chart (units / MW toggle) and per-country table
+- `breakdown.html` — pie chart of each country's share of post-2012 gross capacity
+
+The pre-Fukushima window (13 years) mirrors the post-Fukushima window
+(13 years); the year 2011 itself is excluded from both. Pre-window data
+comes from IAEA Tables 13, 14 and 15 (several Japanese units that began
+construction in that window have been in suspended operation since 2011).
+Reactors cancelled before entering the IAEA's tables (e.g. Lungmen,
+V.C. Summer 2/3) do not appear in RDS-2 and are therefore not counted.
+
 ## Repository layout
 
 ```
 .
-├── index.html            # page shell
-├── css/styles.css        # dark-theme styles
-├── js/app.js             # D3 map + tooltip logic
-├── data/reactors.json    # extracted IAEA data + plant coordinates
+├── index.html                 # post-Fukushima map
+├── prefukushima.html          # pre-Fukushima map
+├── comparison.html            # pre vs post charts + table
+├── breakdown.html             # country share pie chart
+├── css/styles.css             # brand-theme styles
+├── js/app.js                  # shared D3 map + tooltip logic
+├── js/breakdown.js            # pie chart logic
+├── js/comparison.js           # comparison chart + table logic
+├── data/reactors.json         # post-2012 IAEA data + plant coordinates
+├── data/reactors_pre.json     # 1998–2010 IAEA data + plant coordinates
 └── docs/IAEA_document 1.pdf   # source reference
 ```
 
 ## Summary
 
-- 34 sites across 14 countries
-- 81 reactor units
-- 93.7&nbsp;GW<sub>e</sub> gross of new nuclear under construction or already
-  connected to the grid since 2012.
+- Post-Fukushima (2012–2024): 81 reactor units, 34 sites, 14 countries, ≈93.7 GW<sub>e</sub> gross
+- Pre-Fukushima (1998–2010): 73 reactor units, 39 sites, 9 countries, ≈72.6 GW<sub>e</sub> gross

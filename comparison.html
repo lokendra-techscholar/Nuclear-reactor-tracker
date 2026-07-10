@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre vs post Fukushima — Nuclear Reactor Construction Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-top">
+        <h1>Pre vs Post Fukushima Construction Starts</h1>
+        <nav class="page-nav" aria-label="Primary">
+          <a href="index.html" class="nav-link">Post&#8209;Fukushima map</a>
+          <a href="prefukushima.html" class="nav-link">Pre&#8209;Fukushima map</a>
+          <a href="comparison.html" class="nav-link active">Pre vs post</a>
+          <a href="breakdown.html" class="nav-link">Country breakdown</a>
+        </nav>
+      </div>
+      <p class="tagline">
+        Comparing two equal 13&#8209;year windows of reactor construction starts:
+        pre&#8209;Fukushima (1&nbsp;Jan&nbsp;1998 &ndash; 31&nbsp;Dec&nbsp;2010) versus
+        post&#8209;Fukushima (1&nbsp;Jan&nbsp;2012 &ndash; 31&nbsp;Dec&nbsp;2024).
+      </p>
+    </div>
+  </header>
+
+  <main class="comparison-main">
+    <section class="comparison-summary">
+      <h2>Worldwide totals</h2>
+      <div class="era-cards">
+        <div class="era-card era-pre">
+          <div class="era-title">Pre&#8209;Fukushima<br><span>1998 &ndash; 2010</span></div>
+          <dl>
+            <div><dt>Reactor units</dt><dd id="pre-units">&ndash;</dd></div>
+            <div><dt>Gross capacity</dt><dd id="pre-mw">&ndash;</dd></div>
+            <div><dt>Countries</dt><dd id="pre-countries">&ndash;</dd></div>
+          </dl>
+        </div>
+        <div class="era-card era-post">
+          <div class="era-title">Post&#8209;Fukushima<br><span>2012 &ndash; 2024</span></div>
+          <dl>
+            <div><dt>Reactor units</dt><dd id="post-units">&ndash;</dd></div>
+            <div><dt>Gross capacity</dt><dd id="post-mw">&ndash;</dd></div>
+            <div><dt>Countries</dt><dd id="post-countries">&ndash;</dd></div>
+          </dl>
+        </div>
+      </div>
+      <p id="comparison-verdict" class="comparison-verdict"></p>
+
+      <div class="metric-toggle" role="group" aria-label="Chart metric">
+        <button type="button" id="toggle-units" class="metric-btn active">Reactor units</button>
+        <button type="button" id="toggle-mw" class="metric-btn">Gross capacity (MW)</button>
+      </div>
+
+      <div class="chart-legend">
+        <span><span class="cl-swatch cl-pre"></span> Pre&#8209;Fukushima (1998&ndash;2010)</span>
+        <span><span class="cl-swatch cl-post"></span> Post&#8209;Fukushima (2012&ndash;2024)</span>
+      </div>
+
+      <p class="breakdown-hint">
+        Hover the bars for exact figures. The year 2011 itself is excluded
+        from both windows. Only reactors reported by the IAEA in RDS&#8209;2
+        (2025 Edition) are counted; units cancelled before entering the
+        IAEA's tables do not appear.
+      </p>
+    </section>
+
+    <section class="comparison-chart-wrap">
+      <div id="bar-container">
+        <svg id="bar-chart" role="img"
+             aria-label="Grouped bar chart comparing reactor construction starts by country, pre versus post Fukushima."></svg>
+        <div id="bar-tooltip" role="tooltip" aria-hidden="true"></div>
+      </div>
+
+      <div class="comparison-table-wrap">
+        <table class="comparison-table" aria-label="Construction starts by country, pre versus post Fukushima">
+          <thead>
+            <tr>
+              <th rowspan="2">Country</th>
+              <th colspan="2">Pre (1998&ndash;2010)</th>
+              <th colspan="2">Post (2012&ndash;2024)</th>
+              <th rowspan="2">&Delta; units</th>
+            </tr>
+            <tr>
+              <th>Units</th><th>MW</th>
+              <th>Units</th><th>MW</th>
+            </tr>
+          </thead>
+          <tbody id="comparison-tbody"></tbody>
+          <tfoot id="comparison-tfoot"></tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+  <script src="js/comparison.js"></script>
+</body>
+</html>
